@@ -10,6 +10,8 @@
 		5E19CAA525E18BE300D3E2DF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19CAA425E18BE300D3E2DF /* APIManager.swift */; };
 		5E19CAA925E18C1100D3E2DF /* APIManagerUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19CAA825E18C1100D3E2DF /* APIManagerUT.swift */; };
 		5E19CAAD25E18EFB00D3E2DF /* ParksResponseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19CAAC25E18EFB00D3E2DF /* ParksResponseAPI.swift */; };
+		5E19CAB325E2A8CB00D3E2DF /* CombineTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19CAB225E2A8CB00D3E2DF /* CombineTestCase.swift */; };
+		5E19CAB925E2B1F800D3E2DF /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E19CAB825E2B1F800D3E2DF /* HTTPError.swift */; };
 		5E33142525E01D7400313714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33142425E01D7400313714 /* AppDelegate.swift */; };
 		5E33142725E01D7400313714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33142625E01D7400313714 /* SceneDelegate.swift */; };
 		5E33142925E01D7400313714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33142825E01D7400313714 /* ViewController.swift */; };
@@ -32,6 +34,8 @@
 		5E19CAA425E18BE300D3E2DF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		5E19CAA825E18C1100D3E2DF /* APIManagerUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerUT.swift; sourceTree = "<group>"; };
 		5E19CAAC25E18EFB00D3E2DF /* ParksResponseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParksResponseAPI.swift; sourceTree = "<group>"; };
+		5E19CAB225E2A8CB00D3E2DF /* CombineTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineTestCase.swift; sourceTree = "<group>"; };
+		5E19CAB825E2B1F800D3E2DF /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		5E33142125E01D7400313714 /* apiCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apiCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E33142425E01D7400313714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E33142625E01D7400313714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 				5E33142625E01D7400313714 /* SceneDelegate.swift */,
 				5E33142825E01D7400313714 /* ViewController.swift */,
 				5E19CAA425E18BE300D3E2DF /* APIManager.swift */,
+				5E19CAB825E2B1F800D3E2DF /* HTTPError.swift */,
 				5E19CAAC25E18EFB00D3E2DF /* ParksResponseAPI.swift */,
 				5E33142A25E01D7400313714 /* Main.storyboard */,
 				5E33142D25E01D7500313714 /* Assets.xcassets */,
@@ -99,6 +104,7 @@
 		5E33143A25E01D7500313714 /* apiCombineTests */ = {
 			isa = PBXGroup;
 			children = (
+				5E19CAB225E2A8CB00D3E2DF /* CombineTestCase.swift */,
 				5E19CAA825E18C1100D3E2DF /* APIManagerUT.swift */,
 				5E33143D25E01D7500313714 /* Info.plist */,
 			);
@@ -209,6 +215,7 @@
 				5E33142925E01D7400313714 /* ViewController.swift in Sources */,
 				5E33142525E01D7400313714 /* AppDelegate.swift in Sources */,
 				5E33142725E01D7400313714 /* SceneDelegate.swift in Sources */,
+				5E19CAB925E2B1F800D3E2DF /* HTTPError.swift in Sources */,
 				5E19CAAD25E18EFB00D3E2DF /* ParksResponseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E19CAA925E18C1100D3E2DF /* APIManagerUT.swift in Sources */,
+				5E19CAB325E2A8CB00D3E2DF /* CombineTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

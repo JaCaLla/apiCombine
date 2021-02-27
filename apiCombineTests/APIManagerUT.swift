@@ -5,9 +5,10 @@
 //  Created by Javier Calatrava on 20/2/21.
 //
 @testable import apiCombine
+import Combine
 import XCTest
 
-class APIManagerUT: XCTestCase {
+class APIManagerUT: CombineTestCase {
 
     var apiManager: APIManager!
 
@@ -31,6 +32,27 @@ class APIManagerUT: XCTestCase {
             exp.fulfill()
         }
         waitForExpectations(timeout: 2.0, handler: nil)
+    }
+    
+    func testFetchParks() throws {
+
+        var parksResponseAPI: ParksResponseAPI?
+        var completion: Subscribers.Completion<HTTPError>?
+
+        let exp = expectation(description: "Publisher finished")
+
+        apiManager.fetchParks()
+            .sink(receiveCompletion: { completion = $0 },
+                  receiveValue: {
+                      parksResponseAPI = $0
+                      exp.fulfill()
+                  })
+            .store(in: &cancellables)
+
+        waitForExpectations(timeout: 2.0, handler: nil)
+        XCTAssertEqual(parksResponseAPI?.data.count, 50)
+        XCTAssertNotNil(completion)
+        XCTAssertEqual(completion, .finished)
     }
 
 }
